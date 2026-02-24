@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <div id="scroll-progress"></div>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -48,9 +50,9 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Umair Aziz</h1>
-            <h2>Graduate Data Scientist</h2>
-            <a href="https://www.dropbox.com/scl/fi/oiakl4apysqwxgs8026j1/Umair-Aziz-Machine-Learning-Engineer.pdf?rlkey=l8rpq3e3cfg2h37xug9okzjjm&st=2bswlozp&dl=0" class="btn-rounded-white">View Professional Resume</a>
+            <h1 data-aos="fade-down" data-aos-duration="1000">Umair Aziz</h1>
+            <h2 data-aos="fade-up" data-aos-duration="1200"><span id="typed"></span></h2>
+            <a href="https://www.dropbox.com/scl/fi/oiakl4apysqwxgs8026j1/Umair-Aziz-Machine-Learning-Engineer.pdf?rlkey=l8rpq3e3cfg2h37xug9okzjjm&st=2bswlozp&dl=0" class="btn-rounded-white" data-aos="zoom-in" data-aos-delay="1000">View Professional Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -65,7 +67,7 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about">
+    <div id="about" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -81,7 +83,7 @@
     </div>
     <!-- End #about -->
 
-    <div id="experience" class="background-alt">
+    <div id="experience" class="background-alt" data-aos="fade-up">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="June 2022 – January 2023">
@@ -120,9 +122,9 @@
     </div>
     <!-- End #experience -->
 
-    <div id="education">
+    <div id="education" data-aos="fade-up">
         <h2 class="heading">Education</h2>
-        <div class="education-block">
+        <div class="education-block" data-aos="fade-right">
             <h3>University of Hertfordshire</h3>
             <span class="education-date">Sept 2022 - Sept 2024</span>
             <h4>Master of Science in Data Science</h4>
@@ -132,7 +134,7 @@
         </div>
         <!-- End .education-block -->
 
-        <div class="education-block">
+        <div class="education-block" data-aos="fade-left">
             <h3>Foundation University</h3>
             <span class="education-date">Sept 2016 - Nov 2020</span>
             <h4>Bachelor of Science in Software Engineering</h4>
@@ -144,11 +146,11 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
+    <div id="projects" class="background-alt" data-aos="fade-up">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/in.png" height="300" width="250" />
                     </div>
@@ -161,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/qist.jpg" height="300" width="250" />
                     </div>
@@ -174,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/project.jpg" />
                     </div>
@@ -187,7 +189,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/project.jpg" />
                     </div>
@@ -200,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/project.jpg" />
                     </div>
@@ -213,7 +215,7 @@
                     </div>
                 </div>
 
-                <div class="project shadow-large">
+                <div class="project shadow-large" data-aos="flip-up">
                     <div class="project-image">
                         <img src="images/project.jpg" />
                     </div>
@@ -229,27 +231,27 @@
         </div>
     </div>
 
-    <div id="skills">
+    <div id="skills" data-aos="fade-up">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Statistical Analysis</li>
-            <li>SQL</li>
-            <li>Data Visualization</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Scikit-Learn</li>
-            <li>R</li>
-            <li>Flutter</li>
-            <li>Dart</li>
-            <li>Java</li>
-            <li>C/C++</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>RESTful APIs</li>
+            <li data-aos="zoom-in" data-aos-delay="100">Python</li>
+            <li data-aos="zoom-in" data-aos-delay="200">Machine Learning</li>
+            <li data-aos="zoom-in" data-aos-delay="300">Statistical Analysis</li>
+            <li data-aos="zoom-in" data-aos-delay="400">SQL</li>
+            <li data-aos="zoom-in" data-aos-delay="500">Data Visualization</li>
+            <li data-aos="zoom-in" data-aos-delay="100">Pandas</li>
+            <li data-aos="zoom-in" data-aos-delay="200">NumPy</li>
+            <li data-aos="zoom-in" data-aos-delay="300">Scikit-Learn</li>
+            <li data-aos="zoom-in" data-aos-delay="400">R</li>
+            <li data-aos="zoom-in" data-aos-delay="500">Flutter</li>
+            <li data-aos="zoom-in" data-aos-delay="100">Dart</li>
+            <li data-aos="zoom-in" data-aos-delay="200">Java</li>
+            <li data-aos="zoom-in" data-aos-delay="300">C/C++</li>
+            <li data-aos="zoom-in" data-aos-delay="400">JavaScript</li>
+            <li data-aos="zoom-in" data-aos-delay="500">Node.js</li>
+            <li data-aos="zoom-in" data-aos-delay="100">React</li>
+            <li data-aos="zoom-in" data-aos-delay="200">Git</li>
+            <li data-aos="zoom-in" data-aos-delay="300">RESTful APIs</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -297,7 +299,9 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

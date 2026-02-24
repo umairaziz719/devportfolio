@@ -12,6 +12,31 @@
 
 (function($) {
 
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        once: true,
+    });
+
+    // Initialize Typed.js
+    if ($('#typed').length) {
+        new Typed('#typed', {
+            strings: ["Graduate Data Scientist", "Machine Learning Engineer", "Data Analyst", "Software Engineer"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    }
+
+    // Scroll progress bar
+    $(window).on('scroll', function() {
+        var winTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var winHeight = $(window).height();
+        var scrolled = (winTop / (docHeight - winHeight)) * 100;
+        $('#scroll-progress').css('width', (scrolled) + '%');
+    });
+
     // Show current year
     $("#current-year").text(new Date().getFullYear());
 
