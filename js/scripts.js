@@ -97,4 +97,23 @@
         });
     });
 
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('#about, #experience, #education, #projects, #skills, #contact, .project, .education-block, #experience-timeline > div');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    revealElements.forEach(el => {
+        el.classList.add('reveal-hidden');
+        revealObserver.observe(el);
+    });
+
 })(jQuery);
