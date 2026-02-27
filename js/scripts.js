@@ -98,7 +98,7 @@
     });
 
     // Scroll reveal animation
-    const revealElements = document.querySelectorAll('#about, #experience, #education, #projects, #skills, #contact, .project, .education-block, #experience-timeline > div');
+    const revealElements = document.querySelectorAll('#about, #experience, #education, #projects, #skills, #certifications, #contact, .project, .education-block, #experience-timeline > div');
 
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

@@ -609,6 +609,42 @@ footer {
     ----- 9. Skills Styles -----
     -------------------------------
 */
+#certifications {
+  padding: 50px 15px;
+  text-align: center;
+}
+#certifications .certification-block {
+  padding: 30px;
+  background: #11141d;
+  border: 1px solid rgba(0, 242, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#certifications .certification-block:hover {
+  border-color: #00f2ff;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+#certifications .certification-block i {
+  font-size: 3em;
+  color: #00f2ff;
+  margin-bottom: 15px;
+}
+#certifications .certification-block h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#certifications .certification-block p {
+  color: #a9b1d6;
+  margin: 0;
+}
+
 #skills {
   padding: 50px 15px;
   text-align: center;
